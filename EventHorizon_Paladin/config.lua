@@ -248,77 +248,57 @@ function EventHorizon:InitializeClass()
   -- ---------------------------------------
   -- Retribution
   -- ---------------------------------------
+	
+  -- Wake of Ashes
+  self:newSpell({
+    requiredTree = 3,
+    requiredTalent = 12,
+    cooldown = 255937,
+  })
+   
+  -- Blade of Justice
+  self:newSpell({
+    requiredTree = 3,
+    requiredLevel = 20,
+    cooldown = 184575,
+  })
 
   -- Judgment
   self:newSpell({
     requiredTree = 3,
     requiredLevel = 3,
     cooldown = 20271,
-    debuff = {197277,0},
-  })
-
-  -- Blade of Justice
-  self:newSpell({
-    requiredTree = 3,
-    requiredLevel = 20,
-    requiredTalentUnselected = 12,
-    cooldown = 184575,
-  })
-
-  -- Divine Hammer
-  self:newSpell({
-    requiredTree = 3,
-    requiredTalent = 12,
-    cooldown = 198034,
-    debuff = {198034,2},
-  })
-
-  -- Wake of Ashes
-  self:newSpell({
-    requiredTree = 3,
-    requiredArtifactTalent = 205273,
-    cooldown = 205273,
-    debuff = 205273,
   })
   
-  -- Execution Sentence
+  -- Hammer of Wrath
   self:newSpell({
     requiredTree = 3,
-    requiredTalent = 2,
-    cooldown = 213757,
-    debuff = {213757,7},
-    --hasted = true,
-  })
- 
-    -- Crusader Strike
-  self:newSpell({
-    requiredTree = 3,
-    requiredTalentUnselected = 5,
-    cooldown = 35395,
-  })
-
-  -- Zeal
-  self:newSpell({
-    requiredTree = 3,
-    requiredTalent = 5,
-    cooldown = 217020,
-    --playerbuff = 217020,
+    requiredTalent = 6,
+    cooldown = 24275,
   })
 
   -- Consecration
   self:newSpell({
     requiredTree = 3,
-    requiredTalent = 3,
+    requiredTalent = 11,
     cooldown = 205228,
   })
 
-  -- Holy Wrath
+  -- Crusader Strike
   self:newSpell({
     requiredTree = 3,
-    requiredTalent = 21,
-    cooldown = 210220,
+    cooldown = 35395,
   })
-
+  
+  -- Execution Sentence
+  self:newSpell({
+    requiredTree = 3,
+    requiredTalent = 3,
+    cooldown = 213757,
+    debuff = {213757,7},
+    --hasted = true,
+  })
+ 
   -- Avenging Wrath
   self:newSpell({
     requiredTree = 3,
@@ -336,10 +316,18 @@ function EventHorizon:InitializeClass()
     playerbuff = 231895,
   })
 
-
+  -- Inquisition
+  self:newSpell({
+    requiredTree = 3,
+    requiredTalent = 21,
+    cooldown = 84963,
+    playerbuff = 84963,
+  })
+  
+  
   -- Retribution Survivability Abilities and Talents
 
-
+--[[
   -- Divine Shield
   self:newSpell({
     requiredTree = 3,
@@ -347,6 +335,7 @@ function EventHorizon:InitializeClass()
     cooldown = 642,
     playerbuff = 642,
   })
+]]--
 
 --[[
   -- Shield of Vengeance
@@ -368,7 +357,6 @@ function EventHorizon:InitializeClass()
 ]]--
 
 
-
   -- Situational CC spells, not included by default.
 --[[
   -- Repentance
@@ -386,6 +374,6 @@ function EventHorizon:InitializeClass()
     requiredTalent = 9,
     cooldown = 115750,
   })
-]]--
+]]--  
 
 end
