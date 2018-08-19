@@ -118,19 +118,18 @@ function EventHorizon:InitializeClass()
   -- Protection
   -- ---------------------------------------
 
-
   -- Hammer of the Righteous
   self:newSpell({
     requiredTree = 2,
     requiredLevel = 10,
-	requiredTalentUnselected = 2,
+	requiredTalentUnselected = 3,
 	recharge = 53595,
   })
   
   -- Blessed Hammer
   self:newSpell({
     requiredTree = 2,
-	requiredTalent = 2,
+	requiredTalent = 3,
     -- debuff = 204301,
 	recharge = 204019,
   })
@@ -166,43 +165,24 @@ function EventHorizon:InitializeClass()
     recharge = 53600,
   })
 
-    -- Eye of Tyr
+  -- Light of the Protector
   self:newSpell({
     requiredTree = 2,
-	requiredArtifactTalent = 209202,
-    cooldown = 209202,
-    debuff = 209202,
-  })
-
-    -- Light of the Protector
-  self:newSpell({
-    requiredTree = 2,
-    requiredLevel = 40,
-	requiredTalentUnselected = 13,
+    requiredTalentUnselected = 15,
     cooldown = 184092,
   })
   
   -- Hand of the Protector
   self:newSpell({
     requiredTree = 2,
-    requiredTalent = 13,
+    requiredTalent = 15,
     cooldown = 213652,
   })
-  
---[[
-  -- Knight Templar
-  self:newSpell({
-    requiredTree = 2,
-    requiredTalent = 14,
-    playerbuff = 221886,
-	recharge = 190784,
-  })
-]]--
 
     -- Seraphim
   self:newSpell({
     requiredTree = 2,
-    requiredTalent = 20,
+    requiredTalent = 21,
     cooldown = 152262,
     playerbuff = 152262,
   })
@@ -243,7 +223,6 @@ function EventHorizon:InitializeClass()
     auraunit = usemouseover and 'mouseover' or 'player',
   })
 ]]--
-
 
   -- ---------------------------------------
   -- Retribution
